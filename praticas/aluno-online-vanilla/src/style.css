@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+    --cor-fundo: #e9e9e9;
+    --cor-texto: #303030;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-color: var(--cor-fundo);
+}
+
+
+main > header > img{
+    height: 90px;
+    margin-left: 50px;
+}
+
+main > header > h1{
+    margin-bottom: 20px;
+}
+
+main > section > form{
+    width: 280px;
+}
+
+main > section > form > input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: var(--cor-fundo);
+    margin-bottom: 10px;
+}
+
+main > section > form > button{
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    background-color: var(--cor-fundo);
+    border: none;
+    border-radius: 5px;
+}
+
+main > section > form > p{
+    color: red;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+@media (width >= 768px) {
+    main{
+        width: 400px;        
+    }
+    main > section > form{
+        width: 380px;
+    }
+}
