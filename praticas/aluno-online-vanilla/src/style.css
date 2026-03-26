@@ -80,6 +80,7 @@ footer{
     main{
         width: 400px;        
     }
+    
     main > section > form{
         width: 380px;
     }
