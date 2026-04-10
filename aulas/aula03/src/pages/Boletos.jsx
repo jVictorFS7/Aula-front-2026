@@ -1,16 +1,31 @@
 import Sidebar from '../components/Sidebar';
+import Tabela from '../components/Tabela';
 import Topbar from '../components/Topbar';
+import Layout from './Layout';
 
 function Boletos(){
-    return <>
-        <Sidebar />
-        <main>
-            <Topbar />
-            <h2>Meus Boletos</h2>
-            <section>
-            </section>
-        </main>
-    </>
+
+    const colunas = [
+        "Vencimento",
+        "Valor",
+        "Situação"
+    ];
+
+    const boletos = [
+        {Vencimento: "01/04/26", valor: 500, situacao: "Pago"},
+        {Vencimento: "01/05/26", valor: 500, situacao: "A vencer"},
+        {Vencimento: "01/06/26", valor: 500, situacao: "A vencer"},
+        {Vencimento: "01/07/26", valor: 500, situacao: "A vencer"},
+        {Vencimento: "01/08/26", valor: 500, situacao: "A vencer"}
+    ];
+
+    return (
+        <Layout 
+            titulo="Meus Boletos" 
+            subtitulo="Histórico de Pagamentos">
+            <Tabela titulos={colunas} dados={boletos}/>
+        </Layout>
+    )
 }
 
 export default Boletos;

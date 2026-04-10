@@ -5,8 +5,8 @@ function Requerimentos(){
     return <>
         <Sidebar />
         <main>
-            <Topbar />
-            <h2>Meus Requerimentos</h2>
+            <Topbar titulo="Meus Requerimentos"/>
+            <h2>Faça solicitações online para a secretaria</h2>
             <section>
             </section>
         </main>
