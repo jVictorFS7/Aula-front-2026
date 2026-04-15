@@ -1,0 +1,9 @@
+article > table > thead > tr{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+article > tbody > tr{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+} 

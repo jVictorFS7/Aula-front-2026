@@ -1,0 +1,14 @@
+article > table > thead > tr {
+    display: grid;
+    grid-template-columns: 30% 15% 15% 20% 20%;
+}
+
+article > tbody > tr{
+    display: grid;
+    grid-template-columns: 30% 15% 15% 20% 20%;  
+}
+
+article > tbody > tr > td{
+    border-color: #e9e9e9;  
+}
+
