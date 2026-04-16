@@ -1,0 +1,12 @@
+aside{
+    display: none;
+    flex: 1;
+    flex-direction: column;
+    background-color: #ddd;
+}
+
+@media (width >= 768px){
+    aside{
+        display: flex;
+    }
+}
