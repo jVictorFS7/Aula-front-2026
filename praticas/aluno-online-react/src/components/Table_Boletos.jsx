@@ -4,13 +4,13 @@ function Table({boletos}){
     return (
     
     <table>
-            <thead>
-                <tr>
-                    <th>Vencimento</th>
-                    <th>Valor R$</th>
-                    <th>Situação</th>
-                </tr>
-            </thead>
+        <thead>
+            <tr>
+                <th>Vencimento</th>
+                <th>Valor R$</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
         <tbody>
             {boletos.map((boleto, index) => (
           <tr key={index}>

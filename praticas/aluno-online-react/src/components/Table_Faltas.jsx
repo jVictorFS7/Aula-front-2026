@@ -4,14 +4,14 @@ function Table({faltas}){
     return (
     
     <table>
-            <caption>2026.1</caption>
-            <thead>
-                <tr>
-                    <th>Disciplina</th>
-                    <th>Total de Faltas</th>
-                    <th>% de Presença</th>
-                </tr>
-            </thead>
+        <caption>2026.1</caption>
+        <thead>
+            <tr>
+                <th>Disciplina</th>
+                <th>Total de Faltas</th>
+                <th>% de Presença</th>
+            </tr>
+        </thead>
         <tbody>
             {faltas.map((falta, index) => (
           <tr key={index}>
