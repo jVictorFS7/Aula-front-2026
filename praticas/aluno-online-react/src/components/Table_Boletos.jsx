@@ -3,7 +3,7 @@ import "./Table_Boletos.css";
 function Table({boletos}){
     return (
     
-        <table>
+    <table>
             <thead>
                 <tr>
                     <th>Vencimento</th>

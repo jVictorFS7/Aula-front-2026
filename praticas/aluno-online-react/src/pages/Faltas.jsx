@@ -10,7 +10,7 @@ function Faltas({faltas}) {
         <Topbar />
         <h2>Histórico de Faltas por Semestre</h2>
         <section>
-          <Table faltas={faltas}/>
+          <Table faltas={faltas} />
         </section>
       </main>
     </>

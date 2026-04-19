@@ -10,7 +10,7 @@ function Dashboard({cards}) {
         <Topbar />
         <h2>Bem-vindo ao portal do aluno</h2>
         <section>
-          <Card cards={cards}/>
+          <Card cards={cards} />
         </section>
       </main>
     </>

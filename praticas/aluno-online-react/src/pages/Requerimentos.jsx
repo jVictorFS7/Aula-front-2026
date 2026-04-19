@@ -11,7 +11,7 @@ function Requerimentos({requerimentos}) {
         <h2>Meus Requerimentos</h2>
         <h3>Faça Solicitações Online para a Secretaria</h3>
         <section>
-          <Table requerimentos={requerimentos}/>
+          <Table requerimentos={requerimentos} />
         </section>
       </main>
     </>

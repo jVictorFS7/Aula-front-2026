@@ -3,7 +3,7 @@ import "./Table_Faltas.css";
 function Table({faltas}){
     return (
     
-        <table>
+    <table>
             <caption>2026.1</caption>
             <thead>
                 <tr>

@@ -62,8 +62,8 @@ function App(){
 
   return (
     <>
-      {pagina == 1 && <Dashboard cards={cards}/>}
-      {pagina == 2 && <Notas notas={notas}/>}
+      {pagina == 1 && <Dashboard cards={cards} />}
+      {pagina == 2 && <Notas notas={notas} />}
       {pagina == 3 && <Faltas faltas={faltas} />}
       {pagina == 4 && <Boletos boletos={boletos} />}
       {pagina == 5 && <Requerimentos requerimentos={requerimentos} />}

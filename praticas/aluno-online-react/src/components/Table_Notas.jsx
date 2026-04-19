@@ -3,7 +3,7 @@ import "./Table_Notas.css";
 function Table_Notas({notas}){
     return (
 
-        <table>
+    <table>
             <caption>2026.1</caption>
             <thead>
                 <tr>

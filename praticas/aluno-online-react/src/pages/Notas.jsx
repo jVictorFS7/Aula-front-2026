@@ -10,7 +10,7 @@ function Notas({notas}) {
         <Topbar />
         <h2>Histórico de Notas por Semestre</h2>
         <section>
-          <Table notas={notas}/>
+          <Table notas={notas} />
         </section>
       </main>
     </>
