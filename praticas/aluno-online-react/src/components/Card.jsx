@@ -1,5 +1,4 @@
 import "./Card.css";
-
 function Card({cards}){
     return (
     
@@ -19,4 +18,5 @@ function Card({cards}){
     </section>    
     )    
 }
+
 export default Card;

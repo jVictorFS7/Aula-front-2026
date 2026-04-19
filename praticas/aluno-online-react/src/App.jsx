@@ -67,6 +67,7 @@ function App(){
       {pagina == 3 && <Faltas faltas={faltas} />}
       {pagina == 4 && <Boletos boletos={boletos} />}
       {pagina == 5 && <Requerimentos requerimentos={requerimentos} />}
+  
     </>
   )
 }
