@@ -1,4 +1,4 @@
-function Table({requerimentos}){
+function Requerimentos({requerimentos}){
     return (
     
     <article>
@@ -26,4 +26,4 @@ function Table({requerimentos}){
     
 }
 
-export default Table;
+export default Requerimentos;
