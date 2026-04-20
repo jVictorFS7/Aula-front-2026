@@ -15,7 +15,7 @@ function Requerimento({requerimentos}) {
         </section>
       </main>
     </>
-  );
+  )
 }
 
 export default Requerimento;

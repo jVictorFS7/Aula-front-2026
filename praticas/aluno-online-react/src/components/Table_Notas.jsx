@@ -16,13 +16,13 @@ function Table_Notas({notas}){
         </thead>
         <tbody>
             {notas.map((nota, index) => (
-          <tr key={index}>
-            <td>{nota.disciplina}</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>{nota.mencao}</td>
-          </tr>
+            <tr key={index}>
+                <td>{nota.disciplina}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{nota.mencao}</td>
+            </tr>
             ))}
         </tbody>
     </table>

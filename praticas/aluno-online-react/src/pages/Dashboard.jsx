@@ -14,7 +14,7 @@ function Dashboard({cards}) {
         </section>
       </main>
     </>
-  );
+  )
 }
 
 export default Dashboard;

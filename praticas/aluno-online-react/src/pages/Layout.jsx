@@ -7,7 +7,7 @@ function Layout() {
         <Topbar />
       </main>
     </>
-  );
+  )
 }
 
 export default Layout;

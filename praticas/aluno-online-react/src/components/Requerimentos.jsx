@@ -11,13 +11,13 @@ function Requerimentos({requerimentos}){
                 </tr>
             </thead>
             <tbody>
-                    {requerimentos.map((requerimento, index) => (
+                {requerimentos.map((requerimento, index) => (
                 <tr key={index}>
                     <td>{requerimento.tipo}</td>
                     <td>{requerimento.data}</td>
                     <td>{requerimento.situacao}</td>
                 </tr>
-                    ))}
+                ))}
             </tbody>
         </table>
     </article>

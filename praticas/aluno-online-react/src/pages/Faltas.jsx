@@ -14,7 +14,7 @@ function Faltas({faltas}) {
         </section>
       </main>
     </>
-  );
+  )
 }
 
 export default Faltas;

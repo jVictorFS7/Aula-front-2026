@@ -14,7 +14,7 @@ function Boletos({boletos}) {
         </section>
       </main>
     </>
-  );
+  )
 }
 
 export default Boletos;

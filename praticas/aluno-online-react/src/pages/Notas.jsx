@@ -14,7 +14,7 @@ function Notas({notas}) {
         </section>
       </main>
     </>
-  );
+  )
 }
 
 export default Notas;
