@@ -1,6 +1,5 @@
 import "./Table_Notas.css";
 function Table_Notas({notas}){
-<<<<<<< HEAD
     return (
 
     <table>
@@ -15,8 +14,6 @@ function Table_Notas({notas}){
             </tr>
         </thead>
         <tbody>
-=======
->>>>>>> dafb7dfac45c1c47914341f202683408ca235b9d
             {notas.map((nota, index) => (
             <tr key={index}>
                 <td>{nota.disciplina}</td>
