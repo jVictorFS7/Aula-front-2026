@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function Requerimentos({requerimentos}){
     return (
     
@@ -27,3 +28,19 @@ function Requerimentos({requerimentos}){
 }
 
 export default Requerimentos;
+=======
+function Table({requerimentos}){
+            {requerimentos.map((requerimento, index) => (
+          <tr key={index}>
+            <td>{requerimento.tipo}</td>
+            <td>{requerimento.data}</td>
+            <td>{requerimento.situacao}</td>
+          </tr>
+            ))}
+           
+        </tbody>
+    </article>    
+    )    
+}
+export default Table;
+>>>>>>> dafb7dfac45c1c47914341f202683408ca235b9d

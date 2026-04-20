@@ -1,6 +1,6 @@
 import "./Table_Boletos.css";
-
 function Table({boletos}){
+<<<<<<< HEAD
     return (
     
     <table>
@@ -19,11 +19,18 @@ function Table({boletos}){
                 <td>{boleto.situacao}</td>
             </tr>
             ))}
+=======
+            {boletos.map((boleto, index) => (
+          <tr key={index}>
+            <td>{boleto.vencimento}</td>
+            <td>{boleto.valor}</td>
+            <td>{boleto.situacao}</td>
+          </tr>
+            ))}            
+>>>>>>> dafb7dfac45c1c47914341f202683408ca235b9d
         </tbody>
-    </table>
-    
-    )
-    
+    </table>    
+    )   
 }
 
 export default Table;
