@@ -4,22 +4,22 @@ import Layout from "./Layout";
 
 function Dashboard() {
 
-    const avisos= [
-      "Eleição para representante",
-      "Participe do IESB-SE"
-    ];
+    // const avisos= [
+    //   "Eleição para representante",
+    //   "Participe do IESB-SE"
+    // ];
 
-    const datas = [
-      "23/04 - Avaliação P1",
-      "04/05 - Tranferência de curso",
-      "07/06 - Renovação de matrícula"
-    ];
+    // const datas = [
+    //   "23/04 - Avaliação P1",
+    //   "04/05 - Tranferência de curso",
+    //   "07/06 - Renovação de matrícula"
+    // ];
 
-    const disciplinas = [
-      "Construção de Frontend",
-      "Devops",
-      "BI e Data Warehousing"
-    ];
+    // const disciplinas = [
+    //   "Construção de Frontend",
+    //   "Devops",
+    //   "BI e Data Warehousing"
+    // ];
 
   return (
     
