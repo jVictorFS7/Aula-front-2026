@@ -7,6 +7,7 @@ function Card(){
             <li></li>
         </ul>
     </article>
+
 }
 
 export default Card;

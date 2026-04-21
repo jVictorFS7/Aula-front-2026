@@ -1,7 +1,6 @@
 import Card from "../components/Card";
 import Layout from "./Layout";
 
-
 function Dashboard() {
 
     // const avisos= [
