@@ -1,6 +1,5 @@
 import logo from '../assets/learn.svg';
 import Menu from './Menu';
-import "./Sidebar.css";
 
 function Sidebar(){
     return (

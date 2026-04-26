@@ -1,20 +1,13 @@
-import "./Card.css";
-function Card({cards}){
-    return (
-    
-    <section>
-        {cards.map((card, index) => (
-        <article key={index}>
-          <h3>{card.titulo}</h3>
-          <ul>
-            {card.itens.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-        </article>
-      ))}
-    </section>    
-    )    
+function Card(){
+    return <article>
+        <h3>Mural de Avisos</h3>
+        <ul>
+            <li>Eleição para representante</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </article>
+
 }
 
 export default Card;

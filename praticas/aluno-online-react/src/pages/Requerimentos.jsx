@@ -1,21 +1,17 @@
-import Requerimentos from "../components/Requerimentos";
-import Sidebar from '../components/Sidebar';
-import Topbar from "../components/Topbar";
 
-function Requerimento({requerimentos}) {
-  return (
-    <>
-      <Sidebar />
-      <main>
-        <Topbar />
-        <h2>Meus Requerimentos</h2>
-        <h3>Faça Solicitações Online para a Secretaria</h3>
-        <section>
-          <Requerimentos requerimentos={requerimentos} />
-        </section>
-      </main>
+import Sidebar from '../components/Sidebar';
+import Topbar from '../components/Topbar';
+
+function Requerimentos(){
+    return <>
+        <Sidebar />
+        <main>
+            <Topbar titulo="Meus Requerimentos"/>
+            <h2>Faça solicitações online para a secretaria</h2>
+            <section>
+            </section>
+        </main>
     </>
-  )
 }
 
-export default Requerimento;
+export default Requerimentos;
