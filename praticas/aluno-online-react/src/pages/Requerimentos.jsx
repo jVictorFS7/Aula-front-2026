@@ -14,4 +14,4 @@ function Requerimentos(){
     </>
 }
 
-export default Requerimento;
+export default Requerimentos;

@@ -1,7 +1,7 @@
 import Tabela from "../components/Tabela";
 import Layout from "./Layout";
 
-function Notas({notas}) {
+function Notas() {
   return (
     <Layout 
       titulo="Minhas Notas" 
