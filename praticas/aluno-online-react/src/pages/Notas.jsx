@@ -2,7 +2,7 @@ import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import Layout from "./Layout";
 
-function Notas() {
+function Notas({notas}) {
   return (
     <Layout 
       titulo="Minhas Notas" 
