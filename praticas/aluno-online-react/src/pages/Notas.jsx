@@ -1,5 +1,4 @@
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
+import Tabela from "../components/Tabela";
 import Layout from "./Layout";
 
 function Notas() {

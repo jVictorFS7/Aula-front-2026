@@ -1,6 +1,4 @@
-import Sidebar from '../components/Sidebar';
 import Tabela from '../components/Tabela';
-import Topbar from '../components/Topbar';
 import Layout from './Layout';
 
 function Boletos(){
