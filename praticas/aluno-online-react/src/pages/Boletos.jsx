@@ -2,7 +2,7 @@ import Table from "../components/Table_Boletos";
 import Sidebar from '../components/Sidebar';
 import Topbar from "../components/Topbar";
 
-function Boletos() {
+function Boletos({boletos}) {
   return (
     <>
       <Sidebar />
@@ -10,7 +10,7 @@ function Boletos() {
         <Topbar />
         <h2>Histórico de Pagamentos</h2>
         <section>
-          <Table />
+          <Table boletos={boletos}/>
         </section>
       </main>
     </>

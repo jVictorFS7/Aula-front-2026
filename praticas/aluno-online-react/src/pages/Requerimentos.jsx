@@ -1,8 +1,8 @@
-import Table from "../components/Requerimentos";
+import Requerimentos from "../components/Requerimentos";
 import Sidebar from '../components/Sidebar';
 import Topbar from "../components/Topbar";
 
-function Requerimentos() {
+function Requerimento({requerimentos}) {
   return (
     <>
       <Sidebar />
@@ -11,11 +11,11 @@ function Requerimentos() {
         <h2>Meus Requerimentos</h2>
         <h3>Faça Solicitações Online para a Secretaria</h3>
         <section>
-          <Table />
+          <Requerimentos requerimentos={requerimentos} />
         </section>
       </main>
     </>
-  );
+  )
 }
 
-export default Requerimentos;
+export default Requerimento;

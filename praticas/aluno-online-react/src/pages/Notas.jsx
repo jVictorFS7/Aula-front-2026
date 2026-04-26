@@ -2,7 +2,7 @@ import Table from "../components/Table_Notas";
 import Sidebar from '../components/Sidebar';
 import Topbar from "../components/Topbar";
 
-function Notas() {
+function Notas({notas}) {
   return (
     <>
       <Sidebar />
@@ -10,11 +10,11 @@ function Notas() {
         <Topbar />
         <h2>Histórico de Notas por Semestre</h2>
         <section>
-          <Table />
+          <Table notas={notas} />
         </section>
       </main>
     </>
-  );
+  )
 }
 
 export default Notas;
