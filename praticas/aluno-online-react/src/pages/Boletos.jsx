@@ -24,6 +24,4 @@ function Boletos(){
             <Tabela titulos={colunas} dados={boletos}/>
         </Layout>
     )
-}
-
 export default Boletos;

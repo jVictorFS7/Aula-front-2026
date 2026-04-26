@@ -11,7 +11,7 @@ function Layout(props) {
         <section>{props.children}</section>
       </main>
     </>
-  );
+  )
 }
 
 export default Layout;

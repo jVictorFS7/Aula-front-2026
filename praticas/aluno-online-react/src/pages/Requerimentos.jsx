@@ -1,3 +1,4 @@
+
 import Sidebar from '../components/Sidebar';
 import Topbar from '../components/Topbar';
 
@@ -13,4 +14,4 @@ function Requerimentos(){
     </>
 }
 
-export default Requerimentos;
+export default Requerimento;
