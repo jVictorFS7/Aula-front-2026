@@ -1,4 +1,3 @@
-import "./Topbar.css";
 import avatar from "../assets/avatar.svg";
 
 function Topbar() {
