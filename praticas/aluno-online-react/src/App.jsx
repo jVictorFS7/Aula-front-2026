@@ -1,22 +1,24 @@
+import { Route, Routes } from 'react-router';
 import Dashboard from './pages/Dashboard';
 import Notas from './pages/Notas';
 import Faltas from './pages/Faltas';
 import Boletos from './pages/Boletos';
 import Requerimentos from './pages/Requerimentos';
-import Login from './pages/Login';
+import Layout from './layouts/layout';
 
 function App(){
 
-  const pagina = 0;
-
   return (
-    <>
-      {pagina == 0 && <Login />}
-      {pagina == 1 && <Dashboard />}
-      {pagina == 2 && <Notas />}
-      {pagina == 3 && <Faltas />}
-    </>
-  )
-}
+      <Routes >
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="/faltas" element={<Faltas />} />
+          <Route path="/notas" element={<Notas />} />
+          <Route path="/boletos" element={<Boletos />} />
+          <Route path="/requerimentos" element={<Requerimentos />} />
+        </Route>
+      </Routes >
+    ) 
 
+}
 export default App;
