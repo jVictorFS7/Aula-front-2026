@@ -2,12 +2,6 @@ import Tabela from '../components/Table_Boletos';
 
 function Boletos(){
 
-    const colunas = [
-        "Vencimento",
-        "Valor",
-        "Situação"
-    ];
-
     const boletos = [
         {vencimento: "01/04/26", valor: 500, situacao: "Pago"},
         {vencimento: "01/05/26", valor: 500, situacao: "A vencer"},
