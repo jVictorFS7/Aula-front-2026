@@ -1,14 +1,31 @@
-import Sidebar from '../components/Sidebar';
-import Topbar from '../components/Topbar';
-import Layout from './Layout';
+import Tabela from "../components/Table_Faltas";
 
 function Faltas(){
+
+    const faltas = [
+        {
+            disciplina: "Frontend",
+            falta: 2,
+            presenca: "95%"
+        },
+        {
+            disciplina: "Devops",
+            falta: 4,
+            presenca: "90%"
+        },
+        {
+            disciplina: "Banco de Dados",
+            falta: 1,
+            presenca: "98%"
+        }
+    ];
+
     return (
-    <Layout 
-        titulo="Minhas Faltas" 
-        subtitulo="Histórico de Faltas por Semestre">
-        <Tabela />
-    </Layout>
+        <>
+            <h1>Minhas Faltas</h1>
+            <h2>Histórico de Faltas por Semestre</h2>
+            <Tabela faltas={faltas} />
+        </>
     );
 }
 
