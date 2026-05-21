@@ -5,9 +5,12 @@ import Faltas from './pages/Faltas';
 import Boletos from './pages/Boletos';
 import Requerimentos from './pages/Requerimentos';
 import Layout from './layouts/layout';
+import Login from './pages/Login';
+import Erro404 from './pages/Erro404';
+// import { useAuthContext } from './context/AuthContext';
 
 function App(){
-
+  // const {logado} = useAuthContext();
   return (
       <Routes >
         <Route path="/" element={<Layout />}>
@@ -17,6 +20,8 @@ function App(){
           <Route path="/boletos" element={<Boletos />} />
           <Route path="/requerimentos" element={<Requerimentos />} />
         </Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<Erro404 />} />
       </Routes >
     ) 
 
