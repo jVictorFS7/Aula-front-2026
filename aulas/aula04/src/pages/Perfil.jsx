@@ -38,9 +38,9 @@ function Perfil() {
     nascimento: {
       validate: {
         dataMinima: (value) =>
-          Date.parse(value) >= new Date("01/01/1900 00:00:00 UTC").getTime() || "Data inválida",
+          Date.parse(`${value} 00:00:00 UTC`) >= new Date("01/01/1900 00:00:00 UTC").getTime() || "Data inválida (inferior)",
         dataMaxima: (value) =>
-          Date.parse(`${value} 00:00:00 UTC`) < new Date().getTime() || "Data inválida",
+          Date.parse(`${value} 00:00:00 UTC`) < new Date().getTime() || "Data inválida (superior)",
       },
     },
     telefone: {
