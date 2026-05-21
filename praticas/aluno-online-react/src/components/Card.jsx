@@ -1,13 +1,16 @@
-function Card(){
-    return <article>
-        <h3>Mural de Avisos</h3>
-        <ul>
-            <li>Eleição para representante</li>
-            <li></li>
-            <li></li>
-        </ul>
-    </article>
+function Card({ titulo, itens }) {
 
+    return (
+        <article>
+            <h3>{titulo}</h3>
+            <ul>
+                {itens.map((item, index) => (
+                    <li key={index}>
+                        {item}
+                    </li>
+                ))}
+            </ul>
+        </article>
+    );
 }
-
 export default Card;

@@ -1,6 +1,6 @@
 
 
-function Tabela(titulos, dados){
+function Tabela({titulos, dados}){
     return (
     
     <table>
