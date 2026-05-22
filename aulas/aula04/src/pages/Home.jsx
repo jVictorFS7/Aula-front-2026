@@ -27,7 +27,35 @@ useEffect(() => {
       <h1>Página Inicial</h1>
       <h2>Minhas Tarefas do Dia</h2>
       {carregando ?(
-        <p>Aguarde...</p>
+        <>
+          <p>Aguarde...</p>
+          <table className="border border-gray-300 rounded animate-pulse">
+            <thead>
+              <tr className="bg-gray-300">
+                <th className="py-2 px-8"></th>
+                <th className="py-2 px-8"></th>
+                <th className="py-2 px-8"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div className="my-1 mx-1 py-0.5 rounded bg-gray-300"></div></td>
+                <td><div className="my-1 mx-1 py-0.5 rounded bg-gray-300"></div></td>
+                <td><div className="my-1 mx-1 py-0.5 rounded bg-gray-300"></div></td>
+              </tr>
+              <tr>
+                <td><div className="my-1 mx-1 py-0.5 rounded bg-gray-300"></div></td>
+                <td><div className="my-1 mx-1 py-0.5 rounded bg-gray-300"></div></td>
+                <td><div className="my-1 mx-1 py-0.5 rounded bg-gray-300"></div></td>
+              </tr>
+              <tr>
+                <td><div className="my-1 mx-1 py-0.5 rounded bg-gray-300"></div></td>
+                <td><div className="my-1 mx-1 py-0.5 rounded bg-gray-300"></div></td>
+                <td><div className="my-1 mx-1 py-0.5 rounded bg-gray-300"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </>
       ):(
       <table>
         <thead>
