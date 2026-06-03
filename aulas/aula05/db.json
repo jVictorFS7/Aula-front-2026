@@ -23,6 +23,18 @@
       "preco": 12.5,
       "unidade": "kg",
       "id": "ljo4CMWpDn0"
+    },
+    {
+      "nome": "melancia",
+      "preco": "9.99",
+      "unidade": "kg",
+      "id": "vuvTURb7BJs"
+    },
+    {
+      "nome": "pera",
+      "preco": "9.99",
+      "unidade": "kg",
+      "id": "jQiMVRzMUMU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
