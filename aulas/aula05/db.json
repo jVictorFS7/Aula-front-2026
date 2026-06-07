@@ -35,6 +35,18 @@
       "preco": "9.99",
       "unidade": "kg",
       "id": "jQiMVRzMUMU"
+    },
+    {
+      "nome": "pera",
+      "preco": "",
+      "unidade": "",
+      "id": "A6M-suVEROE"
+    },
+    {
+      "nome": "macarrao",
+      "preco": "10",
+      "unidade": "25",
+      "id": "iK6ExCYrVhQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -5,22 +5,14 @@ import Faltas from './pages/Faltas';
 import Boletos from './pages/Boletos';
 import Requerimentos from './pages/Requerimentos';
 import Layout from './layouts/layout';
-<<<<<<< HEAD
-import Login from './pages/Login';
-import Erro404 from './pages/Erro404';
-// import { useAuthContext } from './context/AuthContext';
-
-function App(){
-  // const {logado} = useAuthContext();
-=======
 import { useAuthContext } from './context/AuthContext';
 import Login from './pages/Login';
 import Erro404 from './pages/Erro404';
+import RequerimentoForm from './pages/RequerimentoForm';
 
 
 function App(){
   const {autenticado} = useAuthContext();
->>>>>>> a5c2f2601c03c88a97693674e8807f79926af95f
   return (
       <Routes>
         {autenticado ? (
@@ -31,12 +23,8 @@ function App(){
           <Route path="notas" element={<Notas />} />
           <Route path="boletos" element={<Boletos />} />
           <Route path="requerimentos" element={<Requerimentos />} />
+          <Route path="requerimentoform" element={<RequerimentoForm />} />
         </Route>
-<<<<<<< HEAD
-        <Route path="/login" element={<Login />} />
-        <Route path="*" element={<Erro404 />} />
-      </Routes >
-=======
         ):(
           <>
           <Route path="/" element={<Login />} />
@@ -46,7 +34,6 @@ function App(){
         )}
           <Route path="*" element={<Erro404 />} />
     </Routes>
->>>>>>> a5c2f2601c03c88a97693674e8807f79926af95f
     ) 
 }
 export default App;
