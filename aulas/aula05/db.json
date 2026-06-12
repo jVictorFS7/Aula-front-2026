@@ -35,6 +35,20 @@
       "preco": "9.99",
       "unidade": "kg",
       "id": "jQiMVRzMUMU"
+    },
+    {
+      "nome": "pera",
+      "preco": "9.99",
+      "unidade": "kg",
+      "id": "xxvoveOorQI"
+    }
+  ],
+
+  "usuarios":[
+    {
+      "email": "joao@teste.com",
+      "senha": "123",
+      "id": "ab12"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
