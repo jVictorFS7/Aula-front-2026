@@ -34,7 +34,7 @@
 
             if (
             email === "joao@iesb.edu.br" &&
-            senha === "123456"
+            senha === "123"
             ) {
 
             login();

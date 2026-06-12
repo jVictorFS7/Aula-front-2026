@@ -1,0 +1,11 @@
+{
+  "requerimento": [
+    {
+      "id": "TJyfjj4lbOk",
+      "tipo": "Mudança de Turno",
+      "descricao": "Mundaça para o turno da noite",
+      "data": "11/06/2026"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
