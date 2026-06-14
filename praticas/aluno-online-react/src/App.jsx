@@ -35,5 +35,5 @@ function App(){
           <Route path="*" element={<Erro404 />} />
     </Routes>
     ) 
-}
+};
 export default App;
