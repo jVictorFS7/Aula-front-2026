@@ -10,8 +10,8 @@ function Menu(){
 
     return (
         <nav>
-            <h4>{usuario.nome}</h4>
-            <h5>{usuario.email}</h5>
+            <h4>{usuario?.nome}</h4>
+            <h5>{usuario?.email}</h5>
             <ul>
                 <li><NavLink to="/dashboard" className={({isActive}) => isActive ? "ativo" : "" }>Dashboard</NavLink></li>
                 <li><NavLink  to="/notas" className={({isActive}) => isActive ? "ativo" : "" }>Notas</NavLink></li>
