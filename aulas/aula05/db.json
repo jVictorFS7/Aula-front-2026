@@ -11,42 +11,6 @@
       "preco": 5.99,
       "unidade": "kg",
       "id": "Yhs3odqyfUM"
-    },
-    {
-      "nome": "tomate",
-      "preco": 11.99,
-      "unidade": "kg",
-      "id": "tYmkiT4XmdI"
-    },
-    {
-      "nome": "banana",
-      "preco": 12.5,
-      "unidade": "kg",
-      "id": "ljo4CMWpDn0"
-    },
-    {
-      "nome": "melancia",
-      "preco": "9.99",
-      "unidade": "kg",
-      "id": "vuvTURb7BJs"
-    },
-    {
-      "nome": "pera",
-      "preco": "9.99",
-      "unidade": "kg",
-      "id": "jQiMVRzMUMU"
-    },
-    {
-      "nome": "pera",
-      "preco": "",
-      "unidade": "",
-      "id": "A6M-suVEROE"
-    },
-    {
-      "nome": "macarrao",
-      "preco": "10",
-      "unidade": "25",
-      "id": "iK6ExCYrVhQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
