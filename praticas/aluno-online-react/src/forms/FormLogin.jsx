@@ -12,7 +12,7 @@
         const navigate = useNavigate();
 
         const handleEntrar = () => {
-            login({usuario:"joao@iesb.edu.br", senha:"123456"});
+            login({usuario:"joao@iesb.edu.br", senha:"123"});
             navigate("/"); 
         }
 
@@ -34,7 +34,7 @@
 
             if (
             email === "joao@iesb.edu.br" &&
-            senha === "123456"
+            senha === "123"
             ) {
 
             login();

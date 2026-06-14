@@ -1,10 +1,10 @@
-const url = 'http://localhost:5173/requerimentos';
+const url = 'http://localhost:3000/requerimentos';
 
-async function criar(produto){
+async function criar(requerimento){
     try{
     const resposta = await fetch(url, {
         method: "POST",
-        body: JSON.stringify(produto),
+        body: JSON.stringify(requerimento),
         headers: {
             "content-type": "application/json"
         }
@@ -16,10 +16,10 @@ async function criar(produto){
     }
 }
 
-async function obter(produto){
+async function obter(requerimento){
     // por padrão o método é GET, não é necessário declarar o método.
     try{
-    const resposta = await fetch(`${url}/${produto.id}`);
+    const resposta = await fetch(`${url}/${requerimento.id}`);
     const dados = await resposta.json();
     return dados;
     }catch(error){
@@ -37,11 +37,11 @@ async function listar(){
     }
 }
 
-async function modificar(produto){
+async function modificar(requerimento){
     try{
-    const resposta = await fetch(`${url}/${produto.id}`, {
+    const resposta = await fetch(`${url}/${requerimento.id}`, {
         method: "PUT",
-        body: JSON.stringify(produto),
+        body: JSON.stringify(requerimento),
         headers: {
             "content-type": "application/json"
         }
@@ -53,9 +53,9 @@ async function modificar(produto){
     }
 }
 
-async function remover(produto){
+async function remover(requerimento){
     try{
-    const resposta = await fetch(`${url}/${produto.id}`,{
+    const resposta = await fetch(`${url}/${requerimento.id}`,{
         mehotd: "DELETE"
     });
     const dados = await resposta.json();
