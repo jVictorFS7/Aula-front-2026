@@ -2,24 +2,23 @@ import { Link, NavLink } from "react-router";
 import { useAuthContext } from "../context/AuthContext";
 
 function Menu(){
-    const {logout} = useAuthContext();
 
+    const {usuario, logout} = useAuthContext();
     const Sair = () => {
         logout();
     }
 
     return (
         <nav>
+            <h4>{usuario?.nome}</h4>
+            <h5>{usuario?.email}</h5>
             <ul>
                 <li><NavLink to="/dashboard" className={({isActive}) => isActive ? "ativo" : "" }>Dashboard</NavLink></li>
                 <li><NavLink  to="/notas" className={({isActive}) => isActive ? "ativo" : "" }>Notas</NavLink></li>
                 <li><NavLink  to="/faltas" className={({isActive}) => isActive ? "ativo" : "" }>Faltas</NavLink></li>
                 <li><NavLink  to="/boletos" className={({isActive}) => isActive ? "ativo" : "" }>Boletos</NavLink></li>
                 <li><NavLink  to="/requerimentos" className={({isActive}) => isActive ? "ativo" : "" }>Requerimentos</NavLink></li>
-<<<<<<< HEAD
-=======
                 <li><NavLink  to="/requerimentoform" className={({isActive}) => isActive ? "ativo" : "" }>Novo Requerimento</NavLink></li>
->>>>>>> cc6f6eeda20f314e9a0db592936a39e40c3f09e0
                 <li><Link to="/" onClick={Sair}>Sair</Link></li>
             </ul>
         </nav>

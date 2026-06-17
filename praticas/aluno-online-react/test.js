@@ -1,22 +1,23 @@
-import { criar, obter, listar, modificar, remover } from "./client.js";
+import { criar, obter, listar, modificar, remover } from "../aluno-online-react/src/services/requerimentoService";
 
 async function main(){
-    let produto = {nome: "banana", preco: 12.50, unidade: "kg"};
+    let Requerimento = {};
 
-    let resposta = await criar (produto);
-    console.log("Produto criado...", resposta);
+    let resposta = await criar (Requerimento);
+    console.log("Requerimento criado...", resposta);
 
     resposta= await listar();
-    console.log("Produtos listado...", resposta);
+    console.log("Requerimento listado...", resposta);
 
     resposta = await obter(resposta[0]);
-    console.log("Produto consultado...", resposta);
+    console.log("Requerimento consultado...", resposta);
 
-    resposta = await modificar({id:resposta.id, nome:"banana nanica", preco: 19.99, unidade: "kg"});
-    console.log("Produto atualizado...", resposta);
+    resposta = await modificar();
+    console.log("Requerimento atualizado...", resposta);
 
     resposta = await remover(resposta);
-    console.log("Produto removido...", resposta);
+    console.log("Requerimento removido...", resposta);
+>>>>>>> 652c19a56310d7197d32f4aaab768d1a7ca1ad9c
 }
 
 main();

@@ -12,7 +12,7 @@
         const navigate = useNavigate();
 
         const handleEntrar = () => {
-            login({usuario:"joao@iesb.edu.br", senha:"123456"});
+            login({usuario:"joao@iesb.edu.br", senha:"123"});
             navigate("/"); 
         }
 

@@ -1,10 +1,11 @@
 /* eslint-disable react-refresh/only-export-components */
+
 import { createContext, useContext, useState } from "react";
 
 const AuthContext = createContext();
 
 function AuthProvider({children}){
-    const  [autenticado, setAutenticado] = useState(false);
+    const  [autenticado, setAutenticado] = useState(true);
 
     const [usuario, setUsuario] = useState({});
 

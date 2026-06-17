@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import { listar } from "../services/requerimentoService";
+import {useEffect, useState} from "react";
+import { Link } from "react-router";
+import {listar} from "../services/requerimentoService";
 
 function Requerimentos(){
 
@@ -22,19 +23,24 @@ function Requerimentos(){
             <table>
             <thead>
                 <tr>
-                    <th>Tipo</th>
+                    <th>Requerimento</th>
                     <th>Descrição</th>
                     <th>Data</th>
                 </tr>
-                <tbody>
+            </thead>
+            <tbody>
                     {dados.map((item) => (
                     <tr key={item.id}>
-                        <td>{item.tipo}</td>
+                        <td>{item.tipo_requerimento}</td>
                         <td>{item.descricao}</td>
-                        <td>{item.data}</td>       
+                        <td>{item.data}</td>
+                        <td>
+                            <Link to={`/requerimentos/editar/${item.id}`}>Editar</Link>
+                            <Link to="/requerimentos">Remover</Link>
+                        </td>            
                     </tr>
-                ))}</tbody>
-            </thead>
+         ))}</tbody>
+>>>>>>> 652c19a56310d7197d32f4aaab768d1a7ca1ad9c
         </table>
         </main>
     </>

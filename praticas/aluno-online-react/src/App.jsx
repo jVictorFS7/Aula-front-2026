@@ -35,5 +35,5 @@ function App(){
           <Route path="/" element={<RequerimentoForm />} />
     </Routes>
     ) 
-}
+};
 export default App;
