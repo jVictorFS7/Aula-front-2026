@@ -8,8 +8,7 @@ import Layout from './layouts/layout';
 import { useAuthContext } from './context/AuthContext';
 import Login from './pages/Login';
 import Erro404 from './pages/Erro404';
-import RequerimentoForm from './forms/RequerimentoForm';
-
+import RequerimentoForm from './pages/RequerimentoForm';
 
 function App(){
   const {autenticado} = useAuthContext();
@@ -23,6 +22,7 @@ function App(){
           <Route path="notas" element={<Notas />} />
           <Route path="boletos" element={<Boletos />} />
           <Route path="requerimentos" element={<Requerimentos />} />
+          <Route path="requerimentoform" element={<RequerimentoForm />} />
         </Route>
         ):(
           <>

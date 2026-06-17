@@ -6,10 +6,10 @@ function Privado(){
 
     return <> 
     
-    {logado} 
-    
-    (<Outlet />):<Navigate to="/login" />
-
+    {logado?     
+        <Outlet />
+            :<Navigate to="/login" />
+    }
     </>
 }
 

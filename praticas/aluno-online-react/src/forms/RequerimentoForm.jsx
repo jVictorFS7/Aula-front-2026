@@ -1,92 +1,60 @@
-import { useParams } from "react-router";
-import { useForm } from "react-hook-form";
+    import {Link} from "react-router";
+    import {useForm} from "react-hook-form";
+    import "./RequerimentoForm.css";
 
-function RequerimentoForm(){
-    const { id } = useParams();
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  // register() => {name="", onChange="", onBlur=""}
-  // handleSubmit() => dispara a validacao,
-  // informa ao React que mudou os campos
+    function RequerimentoForm(){
+        
+        const {
+            register,
+            handleSubmit,
+            formState: { errors },
+        } = useForm();
 
-  const salvar = (data) => console.log(data);
+        const salvar = (data) => console.log(data);
 
-  // buscar os dados do usuário
+        const regras = {
+            opcoes: {
+                required: "O Tipo de requerimento é obrigatório",
+            },
+            descricao: {
+                required: "A descrição é obrigatória",
+                minLength: {
+                    value: 5,
+                    message: "A descrição deve ter no mínimo 5 caracteres"
+                }
+            }
+        };
 
-  const regras = {
-    nome: {
-      required: "Nome é obrigatório",
-      minLength: {
-        value: 3,
-        message: "O nome tem que ter no mínimo 3 caracteres",
-      },
-      maxLength: {
-        value: 100,
-        message: "O nome deve ter no máximo 100 caracteres",
-      },
-    },
-    email: {
-      required: "Email é obrigatório",
-      pattern: {
-        value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-        message: "Email inválido",
-      },
-    },
-    nascimento: {
-      validate: {
-        dataMinima: (value) =>
-          Date.parse(`${value} 00:00:00 UTC`) >= new Date("01/01/1900 00:00:00 UTC").getTime() || "Data inválida (inferior)",
-        dataMaxima: (value) =>
-          Date.parse(`${value} 00:00:00 UTC`) < new Date().getTime() || "Data inválida (superior)",
-      },
-    },
-    telefone: {
-      min: { value: 0, message: "Telefone inválido" },
-      pattern: {
-        value: /^(\(?\d{2}\)?[\s.-]?)?(\d{4,5})[\s.-]?(\d{4})$/,
-        message: "Telefone inválido",
-      },
-    },
-  };
-    return (
-    <>
-      <h1>Perfil do Usuário {id}</h1>
-      <form onSubmit={handleSubmit(salvar)}>
-        <div>
-          <label htmlFor="nome">Nome</label>
-          <input type="text" id="nome" {...register("nome", regras.nome)} />
-          {errors?.nome && <p>{errors.nome.message}</p>}
-        </div>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" {...register("email", regras.email)} />
-          {errors?.email && <p>{errors.email.message}</p>}
-        </div>
-        <div>
-          <label htmlFor="nascimento">Data de Nascimento</label>
-          <input
-            type="date"
-            id="nascimento"
-            {...register("nascimento", regras.nascimento)}
-          />
-          {errors?.nascimento && <p>{errors.nascimento.message}</p>}
-        </div>
-        <div>
-          <label htmlFor="telefone">Telefone</label>
-          <input
-            type="tel"
-            id="telefone"
-            {...register("telefone", regras.telefone)}
-          />
-          {errors?.telefone && <p>{errors.telefone.message}</p>}
-        </div>
-        <button type="submit">Salvar</button>
-      </form>
-    </>
-    )
-}
+        return (
+        <>
+            <h1>Novo Requerimento</h1>
+            <form id="form_requerimento" onSubmit={handleSubmit(salvar)}>
+                <div>
+                    <label htmlFor="tipo_requerimento">Tipo de Requerimento</label>
+                    <select id="tipo_requerimento" name="tipo_requerimento" {...register("opcoes", regras.opcoes)}>
+                        <option value=""> </option>
+                        <option value="tipo1">Trancamento de curso</option>
+                        <option value="tipo2">Aproveitamento de disciplinas</option>
+                        <option value="tipo3">Certificado de conclusão</option>
+                        <option value="tipo4">Histórico escolar</option>
+                    </select>
+                    {errors?.opcoes && <p>{errors.opcoes.message}</p>}
+                </div>
+                <div>
+                    <label htmlFor="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao" {...register("descricao", regras.descricao)}></textarea>
+                    {errors?.descricao && <p>{errors.descricao.message}</p>}
+                </div>
+                <div>
+                    <label htmlFor="data" >Data do Requerimento</label>
+                    <input type="date" id="data" name="data"/>
+                </div>
+                <Link to="/">Desistir</Link>
+                <button type="submit">Salvar</button>
+            </form>
+        </>
+        )
+    }
 
-export default RequerimentoForm;
+    export default RequerimentoForm;
+

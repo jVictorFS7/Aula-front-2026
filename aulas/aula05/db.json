@@ -38,17 +38,22 @@
     },
     {
       "nome": "pera",
-      "preco": "9.99",
-      "unidade": "kg",
-      "id": "xxvoveOorQI"
+      "preco": "",
+      "unidade": "",
+      "id": "A6M-suVEROE"
+    },
+    {
+      "nome": "macarrao",
+      "preco": "10",
+      "unidade": "25",
+      "id": "iK6ExCYrVhQ"
     }
   ],
-
   "usuarios":[
     {
-      "email": "joao@teste.com",
-      "senha": "123",
-      "id": "ab12"
+      "id": 1,
+      "email": "joao@iesb.br",
+      "senha": "123456"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
