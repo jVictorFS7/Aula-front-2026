@@ -57,12 +57,11 @@ async function listar(){
             ...getAuthHeader()
         }
     });
+
     if (resposta.status === 401) {
             logout();
             throw new Error("401 Unauthorized");
-        }
-
-    const resposta = await fetch(url);
+    }
     const dados = await resposta.json();
     return dados;
     }catch(error){
