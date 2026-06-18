@@ -37,5 +37,12 @@
       "id": "jQiMVRzMUMU"
     }
   ],
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "joao@iesb.br",
+      "senha": "123"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
