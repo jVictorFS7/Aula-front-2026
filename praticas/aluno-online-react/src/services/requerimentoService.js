@@ -1,7 +1,5 @@
 const url = 'http://localhost:3000/requerimentos';
 
-<<<<<<< HEAD
-
 const logout = () => {
     localStorage.removeItem("app:token");
   };
