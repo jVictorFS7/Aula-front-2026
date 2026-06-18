@@ -1,5 +1,5 @@
 import avatar from "../assets/avatar.svg";
-import { useAuthContext } from "../context/AuthContext";
+import { useAuthContext } from "../contexts/AuthContext";
 
 function Topbar() {
 

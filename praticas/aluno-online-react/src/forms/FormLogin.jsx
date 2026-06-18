@@ -1,70 +1,38 @@
-    import { useState } from 'react';
-    import InputEmail from '../components/InputEmail';
-    import InputSenha from '../components/InputSenha';
-    import BotaoSubmit from '../components/BotaoSubmit';
-    import { useAuthContext } from '../context/AuthContext';
-    import { useNavigate } from 'react-router';
+import {useForm} from 'react-hook-form';
+import { useAuthContext } from '../contexts/AuthContext';
+import { useState } from 'react';
+import {useNavigate} from 'react-router';
 
-    function FormLogin(){
+function FormLogin(){
 
-        const {login} = useAuthContext();
+    const {login} = useAuthContext();
+    const [erro, setErro] = useState();
+    const navigate = useNavigate();
+    const{register, handleSubmit, reset} = useForm();
 
-        const navigate = useNavigate();
-
-        const handleEntrar = () => {
-            login({usuario:"joao@iesb.edu.br", senha:"123456"});
-            navigate("/"); 
+    const entrar = async (dados) => {
+        //aqui preciso chamar API para autenticar;
+        try{
+            await login(dados);
+            reset(); // limpa formulário
+            setErro(""); // limpa mensagem de erro
+            navigate("/requerimentos"); // navega
+        }catch(error){
+            setErro(error.message);
         }
-
-        const [email, setEmail] = useState();
-        const [senha, setSenha] = useState();
-        const [EmailErro, setEmailErro] = useState();
-        const [senhaErro, setSenhaErro] = useState();
-
-        const trataSubmit = (e) => {
-            e.preventDefault();
-    
-            if (!email) {
-            setEmailErro("O campo de e-mail é obrigatório");
-            }
-
-            if (!senha) {
-            setSenhaErro("O campo de senha é obrigatório");
-            }
-
-            if (
-            email === "joao@iesb.edu.br" &&
-            senha === "123456"
-            ) {
-
-            login();
-
-            navigate('/');
-
-            } else {
-
-            setSenhaErro("Usuário ou senha inválidos");
-
-            }
-
-        }
-
-        const mudaEmail = (e) => {
-            setEmail(e.target.value);
-            setEmailErro('');
-        };
-        const mudaSenha = (e) => {
-            setSenha(e.target.value);
-            setSenhaErro('');
-        };
-
-        return (
-            <form onSubmit={trataSubmit}>
-                <InputEmail valor={email} erro={EmailErro} mudaValor={mudaEmail} />
-                <InputSenha valor={senha} erro={senhaErro} mudaValor={mudaSenha} />
-                <BotaoSubmit onCLick={handleEntrar}>Entrar</BotaoSubmit>
-            </form>
-        )
     }
 
-    export default FormLogin;
+    return (
+    <>
+    <h1>Login</h1>
+    <p>{erro}</p>
+    <form onSubmit={handleSubmit(entrar)}>
+        <input type="email" placeholder="E-mail" {...register("email")}/>
+        <input type="password" placeholder="Senha" {...register("senha")}/>
+        <button type="submit">Entrar</button>
+    </form>
+    </>
+    )
+}
+
+export default FormLogin;
