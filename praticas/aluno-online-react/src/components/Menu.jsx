@@ -2,9 +2,7 @@ import { Link, NavLink } from "react-router";
 import { useAuthContext } from "../contexts/AuthContext";
 
 function Menu(){
-
     const {logout} = useAuthContext();
-
     const Sair = () => {
         logout();
     }
@@ -18,6 +16,7 @@ function Menu(){
                 <li><NavLink  to="/boletos" className={({isActive}) => isActive ? "ativo" : "" }>Boletos</NavLink></li>
                 <li><NavLink  to="/requerimentoform" className={({isActive}) => isActive ? "ativo" : "" }>Novo Requerimento</NavLink></li>
                 <li><NavLink  to="/requerimentos" className={({isActive}) => isActive ? "ativo" : "" }>Requerimentos</NavLink></li>
+                <li><NavLink  to="/requerimentoform" className={({isActive}) => isActive ? "ativo" : "" }>Novo Requerimento</NavLink></li>
                 <li><Link to="/" onClick={Sair}>Sair</Link></li>
             </ul>
         </nav>

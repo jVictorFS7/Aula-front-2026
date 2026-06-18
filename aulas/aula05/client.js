@@ -1,4 +1,4 @@
-const url = 'http://localhost:5173/produtos';
+const url = 'http://localhost:5173/requerimentos';
 
 async function criar(produto){
     try{

@@ -1,0 +1,11 @@
+{
+  "requerimentos": [
+    {
+      "tipo_requerimento": "Certificado de conclusão",
+      "descricao": "Certificado",
+      "data": "2026-06-09",
+      "id": "2cXbDEg7f88"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

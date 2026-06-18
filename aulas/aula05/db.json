@@ -11,30 +11,13 @@
       "preco": 5.99,
       "unidade": "kg",
       "id": "Yhs3odqyfUM"
-    },
+    }
+  ],
+  "usuarios":[
     {
-      "nome": "tomate",
-      "preco": 11.99,
-      "unidade": "kg",
-      "id": "tYmkiT4XmdI"
-    },
-    {
-      "nome": "banana",
-      "preco": 12.5,
-      "unidade": "kg",
-      "id": "ljo4CMWpDn0"
-    },
-    {
-      "nome": "melancia",
-      "preco": "9.99",
-      "unidade": "kg",
-      "id": "vuvTURb7BJs"
-    },
-    {
-      "nome": "pera",
-      "preco": "9.99",
-      "unidade": "kg",
-      "id": "jQiMVRzMUMU"
+      "id": 1,
+      "email": "joao@iesb.br",
+      "senha": "123456"
     }
   ],
   "usuarios": [

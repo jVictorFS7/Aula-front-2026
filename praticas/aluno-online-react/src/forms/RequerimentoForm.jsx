@@ -17,6 +17,7 @@ function RequerimentoForm(){
         await criar(dados);
         navigate("/requerimentos");
     }
+
     const regras = {
         opcoes: {
             required: "O Tipo de requerimento é obrigatório",

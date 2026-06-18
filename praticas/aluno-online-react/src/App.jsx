@@ -10,9 +10,10 @@ import { useAuthContext } from './contexts/AuthContext';
 import Login from './pages/Login';
 import Erro404 from './pages/Erro404';
 
-
 function App(){
+
   const {logado} = useAuthContext();
+
   return (
       <Routes>
         {logado ? (
@@ -33,7 +34,8 @@ function App(){
         </> 
         )}
           <Route path="*" element={<Erro404 />} />
+          <Route path="/" element={<RequerimentoForm />} />
     </Routes>
     ) 
-}
+};
 export default App;
