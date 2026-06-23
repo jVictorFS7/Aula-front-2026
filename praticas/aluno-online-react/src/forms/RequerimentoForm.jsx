@@ -18,10 +18,6 @@ function RequerimentoForm(){
         navigate("/requerimentos");
     }
 
-<<<<<<< HEAD
-    export default RequerimentoForm;
-
-=======
     const regras = {
         opcoes: {
             required: "O Tipo de requerimento é obrigatório",
@@ -67,4 +63,3 @@ function RequerimentoForm(){
 }
 
 export default RequerimentoForm;
->>>>>>> 652c19a56310d7197d32f4aaab768d1a7ca1ad9c

@@ -30,4 +30,4 @@ function useAuthContext(){
     return useContext(AuthContext);
 }
 
-export {useAuthContext, AuthProvider};
+export { useAuthContext, AuthProvider };

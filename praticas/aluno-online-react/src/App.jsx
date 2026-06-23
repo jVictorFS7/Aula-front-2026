@@ -4,17 +4,19 @@ import Notas from './pages/Notas';
 import Faltas from './pages/Faltas';
 import Boletos from './pages/Boletos';
 import Requerimentos from './pages/Requerimentos';
+import RequerimentoForm from './pages/RequerimentoForm';
 import Layout from './layouts/layout';
-import { useAuthContext } from './context/AuthContext';
+import { useAuthContext } from './contexts/AuthContext';
 import Login from './pages/Login';
 import Erro404 from './pages/Erro404';
-import RequerimentoForm from './pages/RequerimentoForm';
 
 function App(){
-  const {autenticado} = useAuthContext();
+
+  const {logado} = useAuthContext();
+
   return (
       <Routes>
-        {autenticado ? (
+        {logado ? (
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="dashboard" element={<Dashboard />} />
